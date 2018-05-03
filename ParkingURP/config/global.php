@@ -4,7 +4,7 @@
 define("DB_HOST", "localhost");
 
 //NOmbre de la base de datos
-define("DB_NAME", "BD_ParkingURP");
+define("DB_NAME", "bd_parkingurp");
 
 //Usuario de la base de datos
 define("DB_USERNAME", "root");

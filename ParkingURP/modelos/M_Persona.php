@@ -3,7 +3,7 @@
 //Incluimos inicialmente la conexion a la base de datos
 require "../config/Conexion.php";
 
-Class M_Persona{
+Class M_Persona{ 
 	//Implementamos nuestro constructor
 	public function __construct(){
 
@@ -33,6 +33,8 @@ Class M_Persona{
 		$sql = "SELECT p.id_persona, p.codigo, p.nombre, p.ape_paterno, p.ape_materno, tp.nombre as tipo_persona, v.placa FROM T_Persona p INNER JOIN T_Tipo_Persona tp ON p.id_tipo_persona = tp.id_tipo_persona INNER JOIN T_Persona_has_T_Vehiculo pxv ON p.id_persona = pxv.id_persona INNER JOIN T_Vehiculo v ON v.id_vehiculo = pxv.id_vehiculo";
 		return ejecutarConsulta($sql);
 	}
+
+	
 }
 
 ?>
